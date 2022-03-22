@@ -1,8 +1,17 @@
-<h1>Proyecto de Angular</h1>
-<ul>
-  <li><a [routerLink]="['/sobre-mi']">Sobre mí</a></li>
-  <li><a [routerLink]="['/proyectos']">Proyectos</a></li>
-  <li><a [routerLink]="['/crear-proyecto']">Crear Proyeto</a></li>
-  <li><a [routerLink]="['/contacto']">Contacto</a></li>
-</ul>
-<router-outlet></router-outlet>
+<header>  
+  <ul>
+    <li><a [routerLink]="['/sobre-mi']" [routerLinkActive]="['actived']">Sobre mí</a></li>
+    <li><a [routerLink]="['/proyectos']" [routerLinkActive]="['actived']">Proyectos</a></li>
+    <li id="logo"><a href="#">BS</a></li>
+    <li><a [routerLink]="['/crear-proyecto']" [routerLinkActive]="['actived']">Crear Proyeto</a></li>
+    <li><a [routerLink]="['/contacto']" [routerLinkActive]="['actived']">Contacto</a></li>
+  </ul>
+</header>
+
+<section id="content">
+  <router-outlet></router-outlet>
+</section>
+
+<footer>
+  Master en JavaScript de Bryan Santos &copy;
+</footer>
